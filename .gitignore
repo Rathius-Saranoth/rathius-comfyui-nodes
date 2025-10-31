@@ -1,11 +1,19 @@
-# python
+# Test support stubs (keep files but don't commit)
+/comfy/
+/custom_nodes/
+
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
+.Python
 env/
 venv/
 .env
+.venv/
 
-# editor
+# Editor
 .vscode/
 .idea/
 

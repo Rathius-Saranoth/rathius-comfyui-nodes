@@ -1,10 +1,31 @@
 # Rathius ComfyUI Nodes (rathius_comfyui_nodes)
 
-This folder contains example custom nodes for ComfyUI authored by GPT-5 for Rathius. It demonstrates the recommended layout for a custom node package and includes a minimal, testable node (`AddOne`) used for documentation and testing.
+Custom nodes for ComfyUI by Rathius. Includes `AddOne` (a minimal example node) and demonstrates the recommended layout for custom node packages.
 
-Use of name
-- Package folder name: `rathius_comfyui_nodes` (snake_case, Python-friendly).
-- Author display name: `Rathius` — use this when referring to the author in README or packaging metadata.
+## Quick Start
+
+There are two ways to install this package:
+
+1. Install the package in development mode:
+
+```bash
+# From ComfyUI directory
+git clone https://github.com/Rathius-Saranoth/rathius-comfyui-nodes custom_nodes/rathius-comfyui-nodes
+cd custom_nodes/rathius-comfyui-nodes
+pip install -e .
+```
+
+1. Or install directly in ComfyUI's custom_nodes/:
+
+```bash
+cd ComfyUI/custom_nodes
+git clone https://github.com/Rathius-Saranoth/rathius-comfyui-nodes
+```
+
+## Package Info
+
+- Name: `rathius_comfyui_nodes` (snake_case for Python)
+- Author: `Rathius`
 
 Structure
 
