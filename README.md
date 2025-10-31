@@ -1,6 +1,6 @@
 # Rathius ComfyUI Nodes (rathius_comfyui_nodes)
 
-This folder contains example custom nodes for ComfyUI authored by Rathius. It demonstrates the recommended layout for a custom node package and includes a minimal, testable node (`AddOne`) used for documentation and testing.
+This folder contains example custom nodes for ComfyUI authored by GPT-5 for Rathius. It demonstrates the recommended layout for a custom node package and includes a minimal, testable node (`AddOne`) used for documentation and testing.
 
 Use of name
 - Package folder name: `rathius_comfyui_nodes` (snake_case, Python-friendly).
