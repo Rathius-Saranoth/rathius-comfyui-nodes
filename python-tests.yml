@@ -1,0 +1,21 @@
+name: Python smoke test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+      - name: Install pytest
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+      - name: Run smoke test
+        run: pytest -q tests-unit/test_rathius_nodes.py
