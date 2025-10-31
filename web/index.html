@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Rathius ComfyUI Nodes — Demo</title>
+    <style>
+      :root{
+        --bg:#0b0f14;
+        --panel:#0f1720;
+        --muted:#98a0aa;
+        --text:#e6eef6;
+        --accent:#3b82f6;
+        --card-border: rgba(255,255,255,0.04);
+        --glass: rgba(255,255,255,0.02);
+      }
+      html,body{height:100%}
+      body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.45; padding:40px; color:var(--text); background:linear-gradient(180deg,var(--bg),#071018); }
+      header { border-bottom: 1px solid rgba(255,255,255,0.04); margin-bottom: 18px }
+      h1 { margin: 0 0 6px 0; font-size:20px }
+      .card { background: linear-gradient(180deg,var(--panel), rgba(12,16,20,0.9)); border:1px solid var(--card-border); padding:16px; border-radius:10px; max-width:760px; box-shadow: 0 6px 18px rgba(0,0,0,0.6); }
+      a.button { display:inline-block; margin-top:12px; padding:8px 12px; background:var(--accent); color:white; border-radius:8px; text-decoration:none; box-shadow:0 6px 18px rgba(59,130,246,0.12) }
+      pre { background:rgba(255,255,255,0.03); padding:10px; border-radius:6px; color:var(--text); overflow:auto }
+      ul { color:var(--muted) }
+      .small { color:var(--muted); font-size:13px }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Rathius ComfyUI Nodes — Demo</h1>
+      <div>Package: <strong>rathius-comfyui-nodes</strong> — Author: <strong>Rathius</strong></div>
+    </header>
+
+    <div class="card">
+      <p>This is a tiny demo page served by ComfyUI from the custom node package. It demonstrates where static documentation or small frontend widgets can live for your node collection.</p>
+
+      <ul>
+        <li>The node package lives at <code>custom_nodes/rathius_comfyui_nodes/</code></li>
+        <li>Example node: <code>AddOne</code> (returns x + 1)</li>
+        <li>README and pyproject are included in the package</li>
+      </ul>
+
+      <p>To open this page locally, start ComfyUI and visit the extension URL (default port 8188):</p>
+      <pre>http://127.0.0.1:8188/extensions/rathius-comfyui-nodes/index.html</pre>
+
+      <a class="button" href="/extensions/rathius-comfyui-nodes/index.html">Open demo (local)</a>
+    </div>
+  </body>
+</html>

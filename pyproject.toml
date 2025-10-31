@@ -1,0 +1,17 @@
+[project]
+name = "rathius-comfyui-nodes"
+version = "0.0.1"
+description = "Custom nodes for ComfyUI by Rathius"
+authors = [ { name = "Rathius" } ]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[tool.comfy]
+# If you provide a `web/` folder with frontend assets, declare it here so the loader
+# can automatically register it. This is optional.
+web = "web"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"

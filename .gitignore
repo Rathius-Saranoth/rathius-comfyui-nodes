@@ -1,0 +1,28 @@
+# python
+__pycache__/
+*.py[cod]
+env/
+venv/
+.env
+
+# editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ComfyUI / models / outputs — do not commit
+cache/
+models/
+output/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+
+# build
+build/
+dist/
+*.egg-info
