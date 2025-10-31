@@ -77,6 +77,7 @@ web = "web" # relative folder name containing frontend assets
 ```
 
 Notes about publishing
+
 - You do not need to publish a package to use custom nodes — placing the folder under `custom_nodes/` is enough.
 - If you plan to publish to PyPI or distribute as a package, `pyproject.toml` becomes useful: it holds package metadata and build-system configuration (PEP 621 / PEP 517). Use snake_case names for package/module compatibility.
 
@@ -86,6 +87,7 @@ Demo & example workflows — what they entail
 - Example workflows: JSON files saved by ComfyUI that show how to wire your node into a graph. Place these under `example_workflows/` or `examples/` (the loader searches several common names). Each file should be a ComfyUI workflow export so users can click "Load workflow" in the UI and try the node in context.
 
 Example `example_workflows/` content (what to include):
+
 - A minimal txt2img workflow that wires `AddOne` into a debug/meta node (or uses it in a small helper graph). Since `AddOne` is a toy example the workflow can show a small usage pattern with comments.
 - Larger demos can include a README and multiple `.json` workflows showcasing different options, batch runs, and expected outputs.
 
@@ -95,6 +97,7 @@ Testing & verification
 - Runtime verification: when ComfyUI starts, the custom node loader will import this package and register the nodes so they show up in the UI.
 
 If you want, I can also add:
+
 - a short `pyproject.toml` (example) in this folder for packaging metadata,
 - one or two example workflow JSON files under `example_workflows/` to demonstrate practical usage,
 - a tiny `web/` demo page (static) that documents inputs and provides a quick UX for users.

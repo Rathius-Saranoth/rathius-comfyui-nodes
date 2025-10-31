@@ -24,6 +24,7 @@
       ul { color:var(--muted) }
       .small { color:var(--muted); font-size:13px }
     </style>
+    <script src="demo.js" defer></script>
   </head>
   <body>
     <header>
@@ -32,12 +33,18 @@
     </header>
 
     <div class="card">
-      <p>This is a tiny demo page served by ComfyUI from the custom node package. It demonstrates where static documentation or small frontend widgets can live for your node collection.</p>
-
-      <ul>
-        <li>The node package lives at <code>custom_nodes/rathius_comfyui_nodes/</code></li>
-        <li>Example node: <code>AddOne</code> (returns x + 1)</li>
-        <li>README and pyproject are included in the package</li>
+  <div class="example-workflow">
+    <h2>Example Usage</h2>
+    <p>This workflow demonstrates chaining two AddOne nodes (41 → 42 → 43) and then displaying the result with <code>DisplayValue</code>:</p>
+    <pre><code>PrimitiveNode(41) → AddOne → AddOne → DisplayValue("43")</code></pre>
+    <p>Load the complete workflow from: <code>example_workflows/addone_demo.json</code></p>
+    <p>Or try a tiny in-browser demo below (client-side only):</p>
+    <div>
+      <label>Start value: <input id="demo-input" type="number" value="41"></label>
+      <button id="demo-run">Run AddOne → AddOne → Display</button>
+      <div id="demo-output" style="margin-top:8px;font-weight:600"></div>
+    </div>
+  </div>
       </ul>
 
       <p>To open this page locally, start ComfyUI and visit the extension URL (default port 8188):</p>
