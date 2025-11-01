@@ -22,6 +22,7 @@ venv/
 Thumbs.db
 
 # ComfyUI / models / outputs — do not commit
+ComfyUI/
 cache/
 models/
 output/
